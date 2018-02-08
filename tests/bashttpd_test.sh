@@ -12,4 +12,4 @@ testShellHistoruisServed() {
 }
 
 #load shUnit2
-. ../../shunit2/shunit2
+. $SHUNIT2_HOME/shunit2
