@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
 #set -x
 
-a="../bashttpd.conf"
+a="./bashttpd.conf"
 testIssueFileisServed() {
-   assertEquals "issue URI" "/etc/issue" `cat $a | egrep -i serve_file | egrep -i "\/etc\/issue" | awk -F '\"' '{print$2}'`    
+   assertEquals "Issue URI" "/etc/issue" `cat $a | egrep -i serve_file | egrep -i "\/etc\/issue" | awk -F '\"' '{print$2}'`    
 }
 
 
