@@ -8,7 +8,7 @@ testIssueFileisServed() {
 
 
 testShellHistoruisServed() {
-   assertEquals "History URI" "/root/.bash_history" `cat $a | egrep -i serve_file | egrep -i "\/history" | awk -F '\"' '{print$2}'`    
+   assertEquals "History URI" "/tmp/bash_history" `cat $a | egrep -i serve_file | egrep -i "\/history" | awk -F '\"' '{print$2}'`    
 }
 
 #load shUnit2
